@@ -1,5 +1,5 @@
 .gradient-background {
-  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background: linear-gradient(300deg, #173066, #8fbdd3, #11397b);
   background-size: 180% 180%;
   animation: gradient-animation 18s ease infinite;
 }
@@ -28,7 +28,7 @@
 }
 
 body{
-  background:#1B262C;
+  background: black;
 }
 
 .header{
@@ -37,4 +37,83 @@ body{
 
 .mainheader{
   background:#0F4C75;
+}
+
+.header-container{
+  display:flex;
+  justify-content:space-evenly;
+  background-color: black;
+  border-bottom:1px solid white;
+  flex-wrap: wrap;
+  gap:5px;
+}
+
+.header-element{
+  background: black;
+  border-left: 2px solid #BBE1FA;
+  border-right: 2px solid #BBE1FA;
+  padding:0.5%;
+  text-decoration:none;
+  color:#BBE1FA;
+  text-align: center;
+  font-weight: 900;
+  min-width: 100px;
+}
+
+.hero-img{
+  border-radius:50%;
+}
+
+.text-white{
+  color:white;
+}
+
+/* To make the carousel a specific height*/
+
+.carousel-width{
+  height: 400px;
+  max-width: 500px;
+}
+
+.carousel-item{
+  height: 400px;
+  max-width: 500px;
+} 
+.carousel-item img{
+  height: 400px;
+  max-width: 500px;
+}
+
+@media (min-width: 990px){
+  .carousel-width{
+    height: 600px;
+    max-width: 100%;
+  }
+  
+  .carousel-item{
+    height: 600px;
+    max-width: 100%;
+  } 
+  .carousel-item img{
+    height: 600px;
+    max-width: 100%;
+  }
+}
+
+.carousel-text{
+  background-color:rgb(0,0,0,.5);
+}
+
+footer{
+  background-color: black;
+}
+
+.white{
+  color:#BBE1FA;
+}
+
+.project-description{
+  background-color: rgb(0, 0, 0, .5);
+  color:whitesmoke;
+  padding:10px;
 }
