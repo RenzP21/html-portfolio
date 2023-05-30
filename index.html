@@ -1,65 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Terrence's Site</title>
+<html lang=”en”>
+	<head>
+		<meta charset=”UTF-8”>
+        <title>Terrence's Portfolio</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css" />
     </head>
-    <body>
-        <img src="Terrence Barong.jpg" alt="Terrence Profile Pic" height="200" width="200">
-            <hr>
-        <h1>Terrence Emil F. Pacioles</h1>
-        <p><em>Licensed <strong>Mechanical Engineer</strong></p></em>
-        <p>I am a Mechanical Engineering Graduate of De La Salle University. </p>
-        <hr>
-        
-        <h3><strong>Educational Attainment</strong></h3>
-            <ul>
-            <li><p><strong><em><a href="https://www.dlsu.edu.ph/">De La Salle Univeristy</a></em> - 2017-2022</strong></p></li>
-                <ul><p>BSME - <em>Bachelor of Science in Mechanical Engineering Specialization in Mechatronics</em></p></ul>
-                <ul><p>CGPA - 3.XYZ</p></ul>
-            <li><p><strong><em><a href="https://www.montessoridemanila.edu.ph/">Montessori De Manila</a></em> - 2004 - 2017</strong></p></li>
-                <ul><p>SHS - STEM<em> (Science, Technology, Engineering, Mathematics)</em></p></ul>
-            </ul>
-        
-        <h3><strong>Skills</strong></h3>
-            <ul>
-                <li>Proficient in AutoCAD (2D Design)</li>
-                <li>Proficient in SOLIDWORKS (3D Design)</li>
-                <li>Proficient in Microsoft Office (Word, Excel, and Powerpoint)</li>
-                <li>Familiar with Python and C++</li>
-                <li>Proficient in English and Filipino</li>
-            </ul>
-        
-        <h3><strong>Experience</strong></h3> 
-            <ul><li><h4><strong>Research Assistant Intern</strong> - <em>De La Salle University</em> - <em>Department of Mechanical Engineering</em></h4>
-                <ul>
-                    <li>Created a literature review paper regarding Hybrid Renewable Energy Systems</li>
-                    <li>Utilized SCOPUS (Literature database) and VOSViewer (Bibliographic Visualizer)</li>
-                </ul>
-            </li></ul>
-        <h3><strong>Projects and Works</strong></h3>
-            <ul>
-                <li><strong>Mechanical Engineering Thesis</strong> | Mechanical Lifter | Research | Design | Calculations | Simulations</li>
-                    <ul>
-                        <li>Coordinated with a manufacturing company to design and simulate a lifting mechanism to improve the ergonomics of the manual lifting process in their production line</li>
-                        <li>Spearheaded the power transmission design and calculations</li>
-                        <li>Led the group in the ergonomic aspect of the research paper with calculations and analysis</li>
-                    </ul>
-                <li><strong>AutoCAD</strong>| 2D Design </li>
-                    <ul>
-                        <li>Designed multiple drawings for class and other projects for design layout and product schematics</li>
-                    </ul>
-                <li><strong>SolidWORKS</strong>| 3D Design</li>
-                    <ul>
-                        <li>Modelled multiple part files and assemblies for class and other projects</li>
-                        <li>Conducted simulations to gather data for engineering practices</li>
-                    </ul>
-            </ul>
+	<body class="gradient-background">
+    <!-- Header -->
+        <!-- Logo, Main Page, My Resume, My Projects, Me and my Interests, Contact Me-->
+           <div class="header-container mainheader p-2">
+            <a href="./index.html" class="header-element col-2">Home</a>
+            <a href="./resume.html" class="header-element col-2">Resume</a>
+            <a href="./projects.html" class="header-element col-2">Projects</a>
+            <a href="./hobbies.html" class="header-element col-2">Hobbies</a>
+            <a href="./contact.html" class="header-element col-2">Contact</a>
+          </div>
+    <!-- Hero -->
 
-        <h3><strong><a draggable=true href="hobbies.html">My Hobbies</a></strong></h3>
-        <h3><strong><a href="contact.html">Contact me!</a></strong></h3>
-    </body>
-    <footer>
-        <p>© 2023 Terrence Pacioles</p>
-    </footer>
-</html> 
+    <div class="container col-xxl-8 px-4 py-2">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-1">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="./images/Terrence Barong.jpg" class="d-block mx-lg-auto img-fluid hero-img" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-white lh-1 mb-3">Hi! I'm Terrence Pacioles!</h1>
+          <p class="lead text-white">A Licensed Mechanical Engineer and Web Developer</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Summary stuff, triple column table-->
+        <!-- Resume (Mech eng), Projects, About me hobbies-->
+        
+        <div class="container">
+        <div id="carouselExampleCaptions" class="carousel slide carousel-width">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/grad2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block carousel-text">
+                <h5>I am a DLSU-Manila graduate,</h5>
+                <p>took up BS-Mechanical Engineering, and passed the licensure exam for mechanical engineers.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/Thesis.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block carousel-text">
+                <h5>My group's thesis design,</h5>
+                <p>we calculated, designed, and simulated a mechanical lifter to help improve the ergonomics in the lifting process in a manufacturing plant.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/Airplane.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block carousel-text">
+                <h5>I love traveling,</h5>
+                <p>seeing new places and experiencing their culture.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+    <!-- Footer-->
+
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+        <p class="col-md-4 mx-3 white">© 2023 Terrence Pacioles</p>
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item"><a href="./index.html" class="nav-link px-2 white">Home</a></li>
+          <li class="nav-item"><a href="./resume.html" class="nav-link px-2 white">Resume</a></li>
+          <li class="nav-item"><a href="./projects.html" class="nav-link px-2 white">Projects</a></li>
+          <li class="nav-item"><a href="./hobbies.html" class="nav-link px-2 white">Hobbies</a></li>
+          <li class="nav-item"><a href="./contact.html" class="nav-link px-2 white">Contact</a></li>
+        </ul>
+      </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+	</body>
+</html>
